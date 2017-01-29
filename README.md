@@ -20,6 +20,20 @@ be changed through the web interface.
 
 **NB**: Please be aware that by default docker will make the exposed ports
 accessible from anywhere if the host firewall is unconfigured.
+##custom
+```
+ docker build -t gf_statsd_graphite_docker .
+ docker run -e SECRET_KEY='random-secret-key' \
+            -p 8070:80 \
+            -p 3000:3000 \
+            -p 2003:2003 \
+            -p 2004:2004 \
+            -p 7002:7002 \
+            -p 8125:8125/udp \
+            -p 8126:8126 \
+            -d gf_statsd_graphite_docker
+```
+
 
 ### Data volumes
 

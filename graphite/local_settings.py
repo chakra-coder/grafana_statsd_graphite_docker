@@ -12,7 +12,7 @@ except KeyError:
 #DEBUG = True
 
 # Set your local timezone (django will try to figure this out automatically)
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Shanghai'
 
 STORAGE_DIR = '/data/graphite'
 
